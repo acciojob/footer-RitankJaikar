@@ -5,10 +5,10 @@ footer {
 }
 
 .content {
-	padding: 23px
+	padding: 24px
 }
 
-.top {
+.top, .bottom-details {
 	display: flex;
 	justify-content: space-between;
 }
@@ -50,15 +50,28 @@ footer {
 
 .box-title {
 	text-decoration: underline;
-	font-size: 24px;
+	font-size: 22px;
 }
 
-.box a {
+.box a, .bottom-details a {
 	text-decoration: none;
 	color: white;
 }
 
+.bottom-details {
+	background-color: darkgray;
+	padding: 10px 24px;
+}
 
+@media only screen and (max-width: 650px) {
+	.top, .bottom-details, .link-boxes {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	    gap: 24px;
+	    text-align: center;
+	}
+}
 
 
 
